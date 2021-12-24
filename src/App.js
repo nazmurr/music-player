@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import MusicPlayer from "./MusicPlayer/index";
+import "./App.css";
+import { songs } from "./playList.json";
+import PlayList from "./PlayList/index";
 
 function App() {
+  const [currentSong, setCurrentSong] = useState(songs[0]);
+  const [currentSongIndex, setCurrentSongIndex] = useState(0);
+
+  const selectSongHandler = (index) => {
+    setCurrentSongIndex(index);
+    setCurrentSong(songs[index]);
+  };
+
+  const selectPreviousSongHandler = () => {
+    let songIndex = currentSongIndex;
+    songIndex = songIndex === 0 ? songIndex : songIndex - 1;
+    setCurrentSong(songs[songIndex]);
+    setCurrentSongIndex(songIndex);
+  };
+
+  const selectNextSongHandler = () => {
+    let songIndex = currentSongIndex;
+    songIndex = songs.length - 1 === songIndex ? songIndex : songIndex + 1;
+    setCurrentSong(songs[songIndex]);
+    setCurrentSongIndex(songIndex);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ width: "400px", margin: "auto" }}>
+      <MusicPlayer
+        song={currentSong}
+        selectPreviousSongHandler={selectPreviousSongHandler}
+        selectNextSongHandler={selectNextSongHandler}
+      />
+      <PlayList
+        songs={songs}
+        selectSongHandler={selectSongHandler}
+        currentSongIndex={currentSongIndex}
+      />
     </div>
   );
 }
