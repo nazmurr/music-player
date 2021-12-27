@@ -8,11 +8,32 @@
       "songUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
     },
     {
-      "title": "Live from Space 2",
-      "artist": "Mac Miller",
-      "album": "Year 2200",
-      "coverImage": "https://mui.com/static/images/cards/live-from-space.jpg",
+      "title": "The Greatest",
+      "artist": "Sia",
+      "album": "I Wanna Know",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273754b2fddebe7039fdb912837",
       "songUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+    },
+    {
+      "title": "Peach",
+      "artist": "Kevin Abstract",
+      "album": "Lights Up",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b273b1c4b76e23414c9f20242268",
+      "songUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+    },
+    {
+      "title": "Honest",
+      "artist": "The Chainsmokers",
+      "album": "Saints",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b2730c13d3d5a503c84fcc60ae94",
+      "songUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
+    },
+    {
+      "title": "MAMACITA",
+      "artist": "Black Eyed Peas",
+      "album": "Translation",
+      "coverImage": "https://i.scdn.co/image/ab67616d0000b2735a7f21dad5c796d719650972",
+      "songUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"
     }
   ]
 }
